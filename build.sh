@@ -17,7 +17,7 @@ SRC_PATH="./src"
 BIN_PATH="./bin/MAIN.a"
 
 # Get all the cpp files in the source directory
-SRC_FILES="$(ls $SRC_PATH/*.cpp | tr '\n' ' ')"
+SRC_FILES="$(find $SRC_PATH -name \*.cpp | tr '\n' ' ')"
 
 # Print starting message
 echo -e "Started build...\n"
